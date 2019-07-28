@@ -137,6 +137,15 @@ void displaySubCount(long subCount) {
     displayOne.writeDigitNum(0, 0); //Padding with a 0 so it doesnt look not centered
   }
   displayTwo.print(leastSignificantDigits, DEC);
+  if (leastSignificantDigits < 999) {
+    displayTwo.writeDigitNum(0, 0);
+    if (leastSignificantDigits < 99) {
+      displayTwo.writeDigitNum(1, 0);
+      if (leastSignificantDigits < 9) {
+        displayTwo.writeDigitNum(2, 0);
+      }
+    }
+  }
   displayOne.writeDisplay();
   displayTwo.writeDisplay();
 }
