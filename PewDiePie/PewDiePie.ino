@@ -332,7 +332,7 @@ void handleWebClient(){
             client.println("<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>");
 
             // Web Page
-            client.println("</head><body><h1>ESP32 with Servo</h1>");
+            client.println("</head><body><h1>But can they do this!?</h1>");
             client.println("<p>Position: <span id=\"servoPos\"></span></p>");
 
             client.print("<input type=\"range\" min=\"");
